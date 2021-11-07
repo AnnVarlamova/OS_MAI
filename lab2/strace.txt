@@ -1,0 +1,392 @@
+execve("./parent.out", ["./parent.out"], 0x7ffe92cbcda8 /* 59 vars */) = 0
+brk(NULL)                               = 0x55b15d2f0000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=79721, ...}) = 0
+mmap(NULL, 79721, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f62bcf86000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\304\10\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1594864, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62bcf84000
+mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62bc9e8000
+mprotect(0x7f62bcb61000, 2097152, PROT_NONE) = 0
+mmap(0x7f62bcd61000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x179000) = 0x7f62bcd61000
+mmap(0x7f62bcd6d000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f62bcd6d000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96616, ...}) = 0
+mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62bc7d0000
+mprotect(0x7f62bc7e7000, 2093056, PROT_NONE) = 0
+mmap(0x7f62bc9e6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f62bc9e6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\35\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030928, ...}) = 0
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62bc3df000
+mprotect(0x7f62bc5c6000, 2097152, PROT_NONE) = 0
+mmap(0x7f62bc7c6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f62bc7c6000
+mmap(0x7f62bc7cc000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f62bc7cc000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1700792, ...}) = 0
+mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f62bc041000
+mprotect(0x7f62bc1de000, 2093056, PROT_NONE) = 0
+mmap(0x7f62bc3dd000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19c000) = 0x7f62bc3dd000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62bcf82000
+arch_prctl(ARCH_SET_FS, 0x7f62bcf82d80) = 0
+mprotect(0x7f62bc7c6000, 16384, PROT_READ) = 0
+mprotect(0x7f62bc3dd000, 4096, PROT_READ) = 0
+mprotect(0x7f62bc9e6000, 4096, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f62bcf80000
+mprotect(0x7f62bcd61000, 40960, PROT_READ) = 0
+mprotect(0x55b15b5e4000, 4096, PROT_READ) = 0
+mprotect(0x7f62bcf9a000, 4096, PROT_READ) = 0
+munmap(0x7f62bcf86000, 79721)           = 0
+brk(NULL)                               = 0x55b15d2f0000
+brk(0x55b15d311000)                     = 0x55b15d311000
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+write(1, "Enter the name of file for answe"..., 36Enter the name of file for answers: ) = 36
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+read(0, t.txt
+"t.txt\n", 1024)                = 6
+write(1, "Enter numerous:\n", 16Enter numerous:
+)       = 16
+write(1, "\n", 1
+)                       = 1
+pipe([3, 4])                            = 0
+pipe([5, 6])                            = 0
+dup(1)                                  = 7
+clone(strace: Process 19691 attached
+child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f62bcf83050) = 19691
+[pid 19669] close(3 <unfinished ...>
+[pid 19691] close(5 <unfinished ...>
+[pid 19669] <... close resumed> )       = 0
+[pid 19691] <... close resumed> )       = 0
+[pid 19669] close(3 <unfinished ...>
+[pid 19691] close(4 <unfinished ...>
+[pid 19669] <... close resumed> )       = -1 EBADF (Bad file descriptor)
+[pid 19691] <... close resumed> )       = 0
+[pid 19669] close(6 <unfinished ...>
+[pid 19691] dup2(3, 0 <unfinished ...>
+[pid 19669] <... close resumed> )       = 0
+[pid 19691] <... dup2 resumed> )        = 0
+[pid 19669] dup2(4, 1 <unfinished ...>
+[pid 19691] dup2(6, 1 <unfinished ...>
+[pid 19669] <... dup2 resumed> )        = 1
+[pid 19691] <... dup2 resumed> )        = 1
+[pid 19669] read(0,  <unfinished ...>
+[pid 19691] execve("child.out", ["child.out", "t.txt"], 0x7ffd5a07a6f8 /* 59 vars */) = 0
+[pid 19691] brk(NULL)                   = 0x5563be2e7000
+[pid 19691] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 19691] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 19691] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+[pid 19691] fstat(4, {st_mode=S_IFREG|0644, st_size=79721, ...}) = 0
+[pid 19691] mmap(NULL, 79721, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fcf37e28000
+[pid 19691] close(4)                    = 0
+[pid 19691] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 19691] openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid 19691] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\304\10\0\0\0\0\0"..., 832) = 832
+[pid 19691] fstat(4, {st_mode=S_IFREG|0644, st_size=1594864, ...}) = 0
+[pid 19691] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf37e26000
+[pid 19691] mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fcf3788a000
+[pid 19691] mprotect(0x7fcf37a03000, 2097152, PROT_NONE) = 0
+[pid 19691] mmap(0x7fcf37c03000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x179000) = 0x7fcf37c03000
+[pid 19691] mmap(0x7fcf37c0f000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcf37c0f000
+[pid 19691] close(4)                    = 0
+[pid 19691] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 19691] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid 19691] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\35\2\0\0\0\0\0"..., 832) = 832
+[pid 19691] fstat(4, {st_mode=S_IFREG|0755, st_size=2030928, ...}) = 0
+[pid 19691] mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fcf37499000
+[pid 19691] mprotect(0x7fcf37680000, 2097152, PROT_NONE) = 0
+[pid 19691] mmap(0x7fcf37880000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1e7000) = 0x7fcf37880000
+[pid 19691] mmap(0x7fcf37886000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcf37886000
+[pid 19691] close(4)                    = 0
+[pid 19691] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 19691] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid 19691] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
+[pid 19691] fstat(4, {st_mode=S_IFREG|0644, st_size=1700792, ...}) = 0
+[pid 19691] mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fcf370fb000
+[pid 19691] mprotect(0x7fcf37298000, 2093056, PROT_NONE) = 0
+[pid 19691] mmap(0x7fcf37497000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x19c000) = 0x7fcf37497000
+[pid 19691] close(4)                    = 0
+[pid 19691] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 19691] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 4
+[pid 19691] read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
+[pid 19691] fstat(4, {st_mode=S_IFREG|0644, st_size=96616, ...}) = 0
+[pid 19691] mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7fcf36ee3000
+[pid 19691] mprotect(0x7fcf36efa000, 2093056, PROT_NONE) = 0
+[pid 19691] mmap(0x7fcf370f9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x16000) = 0x7fcf370f9000
+[pid 19691] close(4)                    = 0
+[pid 19691] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf37e24000
+[pid 19691] arch_prctl(ARCH_SET_FS, 0x7fcf37e24d80) = 0
+[pid 19691] mprotect(0x7fcf37880000, 16384, PROT_READ) = 0
+[pid 19691] mprotect(0x7fcf370f9000, 4096, PROT_READ) = 0
+[pid 19691] mprotect(0x7fcf37497000, 4096, PROT_READ) = 0
+[pid 19691] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf37e22000
+[pid 19691] mprotect(0x7fcf37c03000, 40960, PROT_READ) = 0
+[pid 19691] mprotect(0x5563bc764000, 4096, PROT_READ) = 0
+[pid 19691] mprotect(0x7fcf37e3c000, 4096, PROT_READ) = 0
+[pid 19691] munmap(0x7fcf37e28000, 79721) = 0
+[pid 19691] brk(NULL)                   = 0x5563be2e7000
+[pid 19691] brk(0x5563be308000)         = 0x5563be308000
+[pid 19691] openat(AT_FDCWD, "t.txt", O_WRONLY|O_CREAT, 0700) = 4
+[pid 19691] fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+[pid 19691] read(0, 56 7 8
+ <unfinished ...>
+[pid 19669] <... read resumed> "56 7 8\n", 1024) = 7
+[pid 19669] write(1, "3 56 7 8 ", 9)    = 9
+[pid 19691] <... read resumed> "3 56 7 8 ", 4096) = 9
+[pid 19669] read(5,  <unfinished ...>
+[pid 19691] fstat(4, {st_mode=S_IFREG|0700, st_size=0, ...}) = 0
+[pid 19691] lseek(4, 0, SEEK_CUR)       = 0
+[pid 19691] write(4, "1.000000\n", 9)   = 9
+[pid 19691] fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+[pid 19691] write(1, "1", 1)            = 1
+[pid 19669] <... read resumed> "1", 4)  = 1
+[pid 19691] read(0,  <unfinished ...>
+[pid 19669] read(0, 456.8 6.78 0.98
+"456.8 6.78 0.98\n", 1024) = 16
+[pid 19669] write(1, "3 456.8 6.78 0.98 ", 18) = 18
+[pid 19669] read(5,  <unfinished ...>
+[pid 19691] <... read resumed> "3 456.8 6.78 0.98 ", 4096) = 18
+[pid 19691] fstat(4, {st_mode=S_IFREG|0700, st_size=9, ...}) = 0
+[pid 19691] lseek(4, 0, SEEK_CUR)       = 9
+[pid 19691] write(4, "68.749619\n", 10) = 10
+[pid 19691] write(1, "1", 1 <unfinished ...>
+[pid 19669] <... read resumed> "1", 4)  = 1
+[pid 19669] read(0,  <unfinished ...>
+[pid 19691] <... write resumed> )       = 1
+[pid 19691] read(0, 0 34 56 7 88
+ <unfinished ...>
+[pid 19669] <... read resumed> "0 34 56 7 88\n", 1024) = 13
+[pid 19669] write(1, "5 0 34 56 7 88 ", 15) = 15
+[pid 19669] read(5,  <unfinished ...>
+[pid 19691] <... read resumed> "5 0 34 56 7 88 ", 4096) = 15
+[pid 19691] fstat(4, {st_mode=S_IFREG|0700, st_size=19, ...}) = 0
+[pid 19691] lseek(4, 0, SEEK_CUR)       = 19
+[pid 19691] write(4, "0.000000\n", 9)   = 9
+[pid 19691] write(1, "1", 1)            = 1
+[pid 19669] <... read resumed> "1", 4)  = 1
+[pid 19691] read(0,  <unfinished ...>
+[pid 19669] read(0, 45 9
+"45 9\n", 1024)     = 5
+[pid 19669] write(1, "2 45 9 ", 7)      = 7
+[pid 19669] read(5,  <unfinished ...>
+[pid 19691] <... read resumed> "2 45 9 ", 4096) = 7
+[pid 19691] fstat(4, {st_mode=S_IFREG|0700, st_size=28, ...}) = 0
+[pid 19691] lseek(4, 0, SEEK_CUR)       = 28
+[pid 19691] write(4, "5.000000\n", 9)   = 9
+[pid 19691] write(1, "1", 1)            = 1
+[pid 19669] <... read resumed> "1", 4)  = 1
+[pid 19691] read(0,  <unfinished ...>
+[pid 19669] read(0, "", 1024)           = 0
+[pid 19669] close(4)                    = 0
+[pid 19669] close(5)                    = 0
+[pid 19669] exit_group(0)               = ?
+[pid 19669] +++ exited with 0 +++
+<... read resumed> "", 4096)            = 0
+close(4)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+
+
+
+
+
+
+
+
+
+execve("./parent.out", ["./parent.out"], 0x7ffde997ee78 /* 59 vars */) = 0
+brk(NULL)                               = 0x55b03d769000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=79721, ...}) = 0
+mmap(NULL, 79721, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc2e3e9c000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\304\10\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1594864, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc2e3e9a000
+mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc2e38fe000
+mprotect(0x7fc2e3a77000, 2097152, PROT_NONE) = 0
+mmap(0x7fc2e3c77000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x179000) = 0x7fc2e3c77000
+mmap(0x7fc2e3c83000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc2e3c83000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96616, ...}) = 0
+mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc2e36e6000
+mprotect(0x7fc2e36fd000, 2093056, PROT_NONE) = 0
+mmap(0x7fc2e38fc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fc2e38fc000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\35\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030928, ...}) = 0
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc2e32f5000
+mprotect(0x7fc2e34dc000, 2097152, PROT_NONE) = 0
+mmap(0x7fc2e36dc000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fc2e36dc000
+mmap(0x7fc2e36e2000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc2e36e2000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1700792, ...}) = 0
+mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc2e2f57000
+mprotect(0x7fc2e30f4000, 2093056, PROT_NONE) = 0
+mmap(0x7fc2e32f3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19c000) = 0x7fc2e32f3000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc2e3e98000
+arch_prctl(ARCH_SET_FS, 0x7fc2e3e98d80) = 0
+mprotect(0x7fc2e36dc000, 16384, PROT_READ) = 0
+mprotect(0x7fc2e32f3000, 4096, PROT_READ) = 0
+mprotect(0x7fc2e38fc000, 4096, PROT_READ) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc2e3e96000
+mprotect(0x7fc2e3c77000, 40960, PROT_READ) = 0
+mprotect(0x55b03bcf8000, 4096, PROT_READ) = 0
+mprotect(0x7fc2e3eb0000, 4096, PROT_READ) = 0
+munmap(0x7fc2e3e9c000, 79721)           = 0
+brk(NULL)                               = 0x55b03d769000
+brk(0x55b03d78a000)                     = 0x55b03d78a000
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+write(1, "Enter the name of file for answe"..., 36Enter the name of file for answers: ) = 36
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+read(0, r.txt
+"r.txt\n", 1024)                = 6
+write(1, "Enter numerous:\n", 16Enter numerous:
+)       = 16
+write(1, "\n", 1
+)                       = 1
+pipe([3, 4])                            = 0
+pipe([5, 6])                            = 0
+dup(1)                                  = 7
+clone(strace: Process 20114 attached
+child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fc2e3e99050) = 20114
+[pid 20075] close(3 <unfinished ...>
+[pid 20114] close(5 <unfinished ...>
+[pid 20075] <... close resumed> )       = 0
+[pid 20114] <... close resumed> )       = 0
+[pid 20075] close(3 <unfinished ...>
+[pid 20114] close(4 <unfinished ...>
+[pid 20075] <... close resumed> )       = -1 EBADF (Bad file descriptor)
+[pid 20114] <... close resumed> )       = 0
+[pid 20075] close(6 <unfinished ...>
+[pid 20114] dup2(3, 0 <unfinished ...>
+[pid 20075] <... close resumed> )       = 0
+[pid 20114] <... dup2 resumed> )        = 0
+[pid 20075] dup2(4, 1 <unfinished ...>
+[pid 20114] dup2(6, 1 <unfinished ...>
+[pid 20075] <... dup2 resumed> )        = 1
+[pid 20114] <... dup2 resumed> )        = 1
+[pid 20075] read(0,  <unfinished ...>
+[pid 20114] execve("child.out", ["child.out", "r.txt"], 0x7fff4d42eac8 /* 59 vars */) = 0
+[pid 20114] brk(NULL)                   = 0x55d0fd754000
+[pid 20114] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 20114] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[pid 20114] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+[pid 20114] fstat(4, {st_mode=S_IFREG|0644, st_size=79721, ...}) = 0
+[pid 20114] mmap(NULL, 79721, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f174987e000
+[pid 20114] close(4)                    = 0
+[pid 20114] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 20114] openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid 20114] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\304\10\0\0\0\0\0"..., 832) = 832
+[pid 20114] fstat(4, {st_mode=S_IFREG|0644, st_size=1594864, ...}) = 0
+[pid 20114] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f174987c000
+[pid 20114] mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f17492e0000
+[pid 20114] mprotect(0x7f1749459000, 2097152, PROT_NONE) = 0
+[pid 20114] mmap(0x7f1749659000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x179000) = 0x7f1749659000
+[pid 20114] mmap(0x7f1749665000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1749665000
+[pid 20114] close(4)                    = 0
+[pid 20114] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 20114] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid 20114] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\35\2\0\0\0\0\0"..., 832) = 832
+[pid 20114] fstat(4, {st_mode=S_IFREG|0755, st_size=2030928, ...}) = 0
+[pid 20114] mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f1748eef000
+[pid 20114] mprotect(0x7f17490d6000, 2097152, PROT_NONE) = 0
+[pid 20114] mmap(0x7f17492d6000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x1e7000) = 0x7f17492d6000
+[pid 20114] mmap(0x7f17492dc000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f17492dc000
+[pid 20114] close(4)                    = 0
+[pid 20114] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 20114] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 4
+[pid 20114] read(4, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
+[pid 20114] fstat(4, {st_mode=S_IFREG|0644, st_size=1700792, ...}) = 0
+[pid 20114] mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f1748b51000
+[pid 20114] mprotect(0x7f1748cee000, 2093056, PROT_NONE) = 0
+[pid 20114] mmap(0x7f1748eed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x19c000) = 0x7f1748eed000
+[pid 20114] close(4)                    = 0
+[pid 20114] access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+[pid 20114] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 4
+[pid 20114] read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
+[pid 20114] fstat(4, {st_mode=S_IFREG|0644, st_size=96616, ...}) = 0
+[pid 20114] mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f1748939000
+[pid 20114] mprotect(0x7f1748950000, 2093056, PROT_NONE) = 0
+[pid 20114] mmap(0x7f1748b4f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0x16000) = 0x7f1748b4f000
+[pid 20114] close(4)                    = 0
+[pid 20114] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f174987a000
+[pid 20114] arch_prctl(ARCH_SET_FS, 0x7f174987ad80) = 0
+[pid 20114] mprotect(0x7f17492d6000, 16384, PROT_READ) = 0
+[pid 20114] mprotect(0x7f1748b4f000, 4096, PROT_READ) = 0
+[pid 20114] mprotect(0x7f1748eed000, 4096, PROT_READ) = 0
+[pid 20114] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1749878000
+[pid 20114] mprotect(0x7f1749659000, 40960, PROT_READ) = 0
+[pid 20114] mprotect(0x55d0fc69a000, 4096, PROT_READ) = 0
+[pid 20114] mprotect(0x7f1749892000, 4096, PROT_READ) = 0
+[pid 20114] munmap(0x7f174987e000, 79721) = 0
+[pid 20114] brk(NULL)                   = 0x55d0fd754000
+[pid 20114] brk(0x55d0fd775000)         = 0x55d0fd775000
+[pid 20114] openat(AT_FDCWD, "r.txt", O_WRONLY|O_CREAT, 0700) = 4
+[pid 20114] fstat(0, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+[pid 20114] read(0, 654 2.765 
+ <unfinished ...>
+[pid 20075] <... read resumed> "654 2.765\n", 1024) = 10
+[pid 20075] write(1, "2 654 2.765 ", 12) = 12
+[pid 20114] <... read resumed> "2 654 2.765 ", 4096) = 12
+[pid 20075] read(5,  <unfinished ...>
+[pid 20114] fstat(4, {st_mode=S_IFREG|0700, st_size=0, ...}) = 0
+[pid 20114] lseek(4, 0, SEEK_CUR)       = 0
+[pid 20114] write(4, "236.528015\n", 11) = 11
+[pid 20114] fstat(1, {st_mode=S_IFIFO|0600, st_size=0, ...}) = 0
+[pid 20114] write(1, "1", 1)            = 1
+[pid 20075] <... read resumed> "1", 4)  = 1
+[pid 20114] read(0,  <unfinished ...>
+[pid 20075] read(0, 4 0 6
+"4 0 6\n", 1024)    = 6
+[pid 20075] write(1, "3 4 0 6 ", 8)     = 8
+[pid 20114] <... read resumed> "3 4 0 6 ", 4096) = 8
+[pid 20075] read(5,  <unfinished ...>
+[pid 20114] write(1, "0", 1 <unfinished ...>
+[pid 20075] <... read resumed> "0", 4)  = 1
+[pid 20114] <... write resumed> )       = 1
+[pid 20075] close(5 <unfinished ...>
+[pid 20114] close(4 <unfinished ...>
+[pid 20075] <... close resumed> )       = 0
+[pid 20114] <... close resumed> )       = 0
+[pid 20075] close(4 <unfinished ...>
+[pid 20114] exit_group(1 <unfinished ...>
+[pid 20075] <... close resumed> )       = 0
+[pid 20114] <... exit_group resumed>)   = ?
+[pid 20075] dup2(7, 1 <unfinished ...>
+[pid 20114] +++ exited with 1 +++
+<... dup2 resumed> )                    = 1
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=20114, si_uid=1000, si_status=1, si_utime=0, si_stime=1} ---
+close(7)                                = 0
+write(1, "Divizion by zero\n", 17Divizion by zero
+)      = 17
+exit_group(1)                           = ?
++++ exited with 1 +++
+
