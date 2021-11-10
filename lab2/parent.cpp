@@ -98,6 +98,7 @@ int main(void) {
         }
         close(fd1[1]);
         close(fd2[0]);
+        close(fileno(stdout));
     }
     if (wait(&status) == -1) {
         perror("wait");
