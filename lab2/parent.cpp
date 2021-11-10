@@ -52,6 +52,7 @@ int main(void) {
     }
     close(fd1[0]);
     
+    int status;
     if (pid > 0) {
         close(fd1[0]);
         close(fd2[1]);
@@ -74,6 +75,7 @@ int main(void) {
                 fflush(stdout);
                 read(fd2[0], &err, sizeof(1));
                 if (err == '0') {
+                    wait(&status);
                     close(fd2[0]);
                     close(fd1[1]);
                     dup2(old_stdout, fileno(stdout));
@@ -83,6 +85,7 @@ int main(void) {
                     _exit(EXIT_FAILURE);
                 }
                 if (err == '2') {
+                    wait(&status);
                     close(fd2[0]);
                     close(fd1[1]);
                     dup2(old_stdout, fileno(stdout));
@@ -95,6 +98,10 @@ int main(void) {
         }
         close(fd1[1]);
         close(fd2[0]);
+    }
+    if (wait(&status) == -1) {
+        perror("wait");
+        _exit(EXIT_FAILURE);
     }
     return 0;
 }
