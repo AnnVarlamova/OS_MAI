@@ -223,7 +223,6 @@ int main(){
             send_message("0", socket_for_login);
         }
         else{
-            logged_in[nickname] = true;
             std::cout << "User " << nickname << " logged in with id " << id << std::endl;
             send_message("1", socket_for_login);
 
@@ -245,6 +244,7 @@ int main(){
             //
             std::thread worker = std::thread(std::ref(process_client), id);
             worker.detach();
+            logged_in[nickname] = true;
             if(!registered[nickname]) {
                 registered[nickname] = true;
             }
