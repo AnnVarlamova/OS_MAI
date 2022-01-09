@@ -53,8 +53,9 @@ void process_terminal(zmq::socket_t &pusher, std::string login)
         } else if (command == "find") {
             std::cout << "Enter finding string" << std::endl;
             std::string str = "";
-            std::cin >> str;
-            send_message("find " + login + " " + str, pusher);
+            char a; std::cin >> a;
+            std::getline (std::cin, str);
+            send_message("find " + login + " " + a + str, pusher);
         } else {
             std::cout << "Enter command send or dialog or find or exit" << std::endl;
         }
